@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/phoneverify" name="phoneVerify" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{phoneNumber}">
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <soap:Body>
+                            <CheckPhoneNumber xmlns="http://ws.cdyne.com/PhoneVerify/query">
+                                <PhoneNumber>$1</PhoneNumber>
+                                <LicenseKey>0</LicenseKey>
+                            </CheckPhoneNumber>
+                        </soap:Body>
+                    </soap:Envelope>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property(&quot;uri.var.phoneNumber&quot;)"/>
+                </args>
+            </payloadFactory>
+            <header name="Action" scope="default" value="http://ws.cdyne.com/PhoneVerify/query/CheckPhoneNumbers"/>
+            <send>
+                <endpoint key="phoneverifyEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/*">
+        <inSequence>
+            <datamapper config="conf:myresources/json-jsonstr.dmc" inputSchema="conf:myresources/json-jsonstr_inputSchema.json" inputType="JSON" outputSchema="conf:myresources/json-jsonstr_outputSchema.json" outputType="JSON"/>
+            <property name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+            <log level="full"/>
+            <payloadFactory media-type="xml">
+                <format>
+                    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <soap:Body>
+                            <CheckPhoneNumbers xmlns="http://ws.cdyne.com/PhoneVerify/query">
+$1
+ <LicenseKey>0</LicenseKey>
+                            </CheckPhoneNumbers>
+                        </soap:Body>
+                    </soap:Envelope>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property(&quot;ctx:body&quot;)"/>
+                </args>
+            </payloadFactory>
+            <header name="Action" scope="default" value="http://ws.cdyne.com/PhoneVerify/query/CheckPhoneNumbers"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

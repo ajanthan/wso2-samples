@@ -1,0 +1,72 @@
+<data baseURI="" name="BookDataService" serviceGroup="BookDataService" serviceNamespace="https://bookdataservice.com" transports="http https">
+    <description/>
+    <config id="default">
+        <property name="org.wso2.ws.dataservice.user">root</property>
+        <property name="org.wso2.ws.dataservice.password">root</property>
+        <property name="org.wso2.ws.dataservice.protocol">jdbc:mysql://localhost:3306/library?useSSL=false</property>
+        <property name="org.wso2.ws.dataservice.driver">com.mysql.jdbc.Driver</property>
+    </config>
+    <query id="select_book_by_id" useConfig="default">
+        <sql>SELECT id, author, title, genre, price, publish_date, description FROM book WHERE id=?</sql>
+        <param name="bookId" ordinal="1" paramType="SCALAR" sqlType="STRING"/>
+        <result element="books" rowName="book">
+            <element column="id" name="id" xsdType="xs:string"/>
+            <element column="author" name="author" xsdType="xs:string"/>
+            <element column="title" name="title" xsdType="xs:string"/>
+            <element column="genre" name="genre" xsdType="xs:string"/>
+            <element column="price" name="price" xsdType="xs:decimal"/>
+            <element column="publish_date" name="publish_date" xsdType="xs:dateTime"/>
+            <element column="description" name="description" xsdType="xs:string"/>
+        </result>
+    </query>
+    <query id="select_all_book_query" useConfig="default">
+        <sql>SELECT id, author, title, genre, price, publish_date, description FROM book</sql>
+        <result element="books" rowName="book">
+            <element column="id" name="id" xsdType="xs:string"/>
+            <element column="author" name="author" xsdType="xs:string"/>
+            <element column="title" name="title" xsdType="xs:string"/>
+            <element column="genre" name="genre" xsdType="xs:string"/>
+            <element column="price" name="price" xsdType="xs:decimal"/>
+            <element column="publish_date" name="publish_date" xsdType="xs:dateTime"/>
+            <element column="description" name="description" xsdType="xs:string"/>
+        </result>
+    </query>
+    <query id="delete_book_query" useConfig="default">
+        <sql>DELETE FROM book WHERE id=?</sql>
+        <param name="id" ordinal="1" paramType="SCALAR" sqlType="STRING"/>
+    </query>
+    <query id="insert_book_query" useConfig="default">
+        <sql>INSERT INTO book(id,author,title,genre,price,publish_date,description) VALUES(:id,:author,:title,:genre,:price,:publish_date,:description)</sql>
+        <param name="id" ordinal="1" paramType="SCALAR" sqlType="STRING" type="IN"/>
+        <param name="author" ordinal="2" paramType="SCALAR" sqlType="STRING" type="IN"/>
+        <param name="title" ordinal="3" paramType="SCALAR" sqlType="STRING" type="IN"/>
+        <param name="genre" ordinal="4" paramType="SCALAR" sqlType="STRING" type="IN"/>
+        <param name="price" ordinal="5" paramType="SCALAR" sqlType="DOUBLE" type="IN"/>
+        <param name="publish_date" ordinal="6" paramType="SCALAR" sqlType="DATE" type="IN"/>
+        <param name="description" ordinal="7" paramType="SCALAR" sqlType="STRING" type="IN"/>
+    </query>
+    <resource method="GET" path="book/{bookId}">
+        <call-query href="select_book_by_id">
+            <with-param name="bookId" query-param="bookId"/>
+        </call-query>
+    </resource>
+    <resource method="GET" path="books">
+        <call-query href="select_all_book_query"/>
+    </resource>
+    <resource method="POST" path="book">
+        <call-query href="insert_book_query">
+            <with-param name="id" query-param="id"/>
+            <with-param name="author" query-param="author"/>
+            <with-param name="title" query-param="title"/>
+            <with-param name="genre" query-param="genre"/>
+            <with-param name="price" query-param="price"/>
+            <with-param name="publish_date" query-param="publish_date"/>
+            <with-param name="description" query-param="description"/>
+        </call-query>
+    </resource>
+    <resource method="DELETE" path="book/{id}">
+        <call-query href="delete_book_query">
+            <with-param name="id" query-param="id"/>
+        </call-query>
+    </resource>
+</data>

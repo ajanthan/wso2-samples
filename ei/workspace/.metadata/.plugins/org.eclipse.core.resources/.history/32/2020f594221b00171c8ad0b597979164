@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="FileDataLoader" startOnLoad="true" transports="vfs" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <property name="OUT_ONLY" scope="default" type="BOOLEAN" value="true"/>
+            <log description="" level="full"/>
+            <iterate expression="/default/expression">
+                <target>
+                    <sequence>
+                        <log level="full"/>
+                    </sequence>
+                </target>
+            </iterate>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+    <parameter name="transport.PollInterval">10</parameter>
+    <parameter name="transport.vfs.FileURI">file:///home/ajanthan/Work/wso2/demos/cdg-demo/ei/data/in</parameter>
+    <parameter name="transport.vfs.ContentType">application/xml</parameter>
+    <parameter name="transport.vfs.ActionAfterProcess">DELETE</parameter>
+    <parameter name="transport.vfs.MoveAfterFailure">file:///home/ajanthan/Work/wso2/demos/cdg-demo/ei/data/failed</parameter>
+    <parameter name="transport.vfs.ActionAfterFailure">MOVE</parameter>
+    <parameter name="transport.vfs.FileNamePattern">.*\.xml</parameter>
+</proxy>

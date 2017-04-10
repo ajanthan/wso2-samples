@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="json-jsonstr" groupId="com.example.PhoneVerifyRESTAPIRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>json-jsonstr.dmc</file>
+            <path>/_system/config/myresources</path>
+            <mediaType/>
+        </item>
+  <item>
+            <file>json-jsonstr_inputSchema.json</file>
+            <path>/_system/config/myresources</path>
+            <mediaType/>
+        </item>
+  <item>
+            <file>json-jsonstr_outputSchema.json</file>
+            <path>/_system/config/myresources</path>
+            <mediaType/>
+        </item>
+
+    </artifact>
+</artifacts>

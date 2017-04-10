@@ -1,0 +1,18 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+var count_i_PhoneNumbers = 0;
+outputroot =  {};
+outputroot.PhoneNumbers =  {};
+outputroot.PhoneNumbers.string =  [];
+
+for(i_PhoneNumbers in inputroot.PhoneNumbers){
+outputroot.PhoneNumbers.string[count_i_PhoneNumbers] = inputroot.PhoneNumbers[i_PhoneNumbers];
+
+count_i_PhoneNumbers++;
+}
+return outputroot;
+};
+
+
+

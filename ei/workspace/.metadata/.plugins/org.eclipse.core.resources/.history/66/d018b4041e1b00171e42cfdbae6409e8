@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="FileDataLoader" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <property name="OUT_ONLY" scope="default" type="BOOLEAN" value="true"/>
+            <log description="" level="full"/>
+            <drop/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

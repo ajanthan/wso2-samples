@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/phoneverify" name="phoneVerify" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/{phoneNumber}">
+        <inSequence>
+            <payloadFactory media-type="xml">
+                <format>
+                    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <soap:Body>
+                            <CheckPhoneNumber xmlns="http://ws.cdyne.com/PhoneVerify/query">
+                                <PhoneNumber>$1</PhoneNumber>
+                                <LicenseKey>0</LicenseKey>
+                            </CheckPhoneNumber>
+                        </soap:Body>
+                    </soap:Envelope>
+                </format>
+                <args>
+                    <arg evaluator="xml" expression="get-property(&quot;uri.var.phoneNumber&quot;)"/>
+                </args>
+            </payloadFactory>
+            <header name="Action" scope="default" value="http://ws.cdyne.com/PhoneVerify/query/CheckPhoneNumbers"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

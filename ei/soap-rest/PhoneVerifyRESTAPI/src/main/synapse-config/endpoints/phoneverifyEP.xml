@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="phoneverifyEP" xmlns="http://ws.apache.org/ns/synapse">
+    <address format="soap12" statistics="enable" trace="enable" uri="https://ws.cdyne.com/phoneverify/phoneverify.asmx"/>
+</endpoint>

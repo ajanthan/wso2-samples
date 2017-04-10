@@ -1,0 +1,14 @@
+<data name="BookDataService" serviceGroup="BookDataService" serviceNamespace="https://bookdataservice.com" transports="http,https">
+    <description/>
+    <config id="bookDS">
+        <property name="org.wso2.ws.dataservice.user">root</property>
+        <property name="org.wso2.ws.dataservice.password">root</property>
+        <property name="org.wso2.ws.dataservice.protocol">jdbc:mysql://localhost:3306/library</property>
+        <property name="org.wso2.ws.dataservice.driver">com.mysql.jdbc.Driver</property>
+    </config>
+    <query id="select_book_by_id" useConfig="bookDS">
+        <sql>SELECT id, author, title, genre, price, publish_date, description FROM book WHERE id=?SELECT id, author, title, genre, price, publish_date, description FROM book WHERE id=?</sql>
+        <param name="bookId" ordinal="1" paramType="SCALAR" sqlType="STRING"/>
+        <result element="book" rowName="book"/>
+    </query>
+</data>
