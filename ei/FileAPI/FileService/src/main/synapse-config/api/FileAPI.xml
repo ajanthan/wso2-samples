@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/file" name="FileAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/*">
+        <inSequence>
+            <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+            <call>
+                <endpoint name="ftpEndpoint">
+                    <address uri="vfs:sftp://foo:pass@localhost:2222/upload"/>
+                </endpoint>
+            </call>
+            <log level="custom">
+                <property name="text" value="File transfer succeeded."/>
+            </log>
+            <payloadFactory media-type="json">
+                <format>{
+"message":"Transfered file successfully"
+}</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
