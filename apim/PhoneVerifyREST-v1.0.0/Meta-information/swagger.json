@@ -1,0 +1,29 @@
+{
+  "swagger": "2.0",
+  "paths": {
+    "/{phoneNumber}": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "phoneNumber",
+            "in": "path",
+            "allowMultiple": false,
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "x-auth-type": "Application \u0026 Application User",
+        "x-throttling-tier": "Unlimited"
+      }
+    }
+  },
+  "info": {
+    "title": "PhoneVerify",
+    "version": "v1.0.0"
+  }
+}

@@ -1,0 +1,3 @@
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="verifyphone_soap_rest" trace="disable">
+    <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+</sequence>

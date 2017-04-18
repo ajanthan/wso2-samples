@@ -1,0 +1,21 @@
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="verify_phone_rest_soap.xml" trace="disable">
+    <property name="messageType" scope="axis2" type="STRING" value="application/xml"/>
+    <property name="POST_TO_URI" scope="axis2" type="STRING" value="true"/>
+    <payloadFactory media-type="xml">
+        <format>
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:quer="http://ws.cdyne.com/PhoneVerify/query">
+                <soapenv:Header/>
+                <soapenv:Body>
+                    <quer:CheckPhoneNumber>
+                        <quer:PhoneNumber>$1</quer:PhoneNumber>
+                        <quer:LicenseKey>0</quer:LicenseKey>
+                    </quer:CheckPhoneNumber>
+                </soapenv:Body>
+            </soapenv:Envelope>
+        </format>
+        <args>
+            <arg xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope" xmlns:ns3="http://org.apache.synapse/xsd" evaluator="xml" expression="get-property(&quot;uri.var.phoneNumber&quot;)"/>
+        </args>
+    </payloadFactory>
+    <log level="full"/>
+</sequence>
