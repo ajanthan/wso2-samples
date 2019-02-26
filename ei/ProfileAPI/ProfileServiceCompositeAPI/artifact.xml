@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="ProfileAPI" groupId="com.example.ProfileServiceCompositeAPI.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ProfileAPI.xml</file>
+    </artifact>
+    <artifact name="DirectoryServiceEP" groupId="com.example.ProfileServiceCompositeAPI.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DirectoryServiceEP.xml</file>
+    </artifact>
+    <artifact name="AlfrescoEP" groupId="com.example.ProfileServiceCompositeAPI.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AlfrescoEP.xml</file>
+    </artifact>
+    <artifact name="AlfrescoImageServiceEP" groupId="com.example.ProfileServiceCompositeAPI.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/AlfrescoImageServiceEP.xml</file>
+    </artifact>
+</artifacts>

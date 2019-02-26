@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="AlfrescoEP" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="https://97lli4.trial.alfresco.com/alfresco/api/-default-/public/alfresco/versions/1/queries/nodes?term={uri.var.fileName}"/>
+</endpoint>
