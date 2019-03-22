@@ -1,0 +1,28 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+var count_i_inputroot = 0;
+outputroot =  {};
+outputroot['_postbook'] =  {};
+
+for(i_inputroot in inputroot){
+outputroot['_postbook'].id = inputroot[i_inputroot].id;
+outputroot['_postbook'].author = inputroot[i_inputroot].author;
+outputroot['_postbook'].title = inputroot[i_inputroot].title;
+outputroot['_postbook'].genre = inputroot[i_inputroot].genre;
+outputroot['_postbook'].price = inputroot[i_inputroot].price;
+outputroot['_postbook'].publish_date = inputroot[i_inputroot].publish_date;
+outputroot['_postbook'].description = inputroot[i_inputroot].description;
+
+count_i_inputroot++;
+}
+return outputroot;
+};
+
+
+
+
+
+
+
+

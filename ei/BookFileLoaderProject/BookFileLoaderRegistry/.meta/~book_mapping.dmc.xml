@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><resource name="book_mapping.dmc" isCollection="false" path="/_system/governance/datamapper/BookFileLoaderRegistry/book_mapping.dmc" registryUrl="https://localhost:9443/registry" status="added">
+    <mediaType>application/datamapper</mediaType>
+</resource>

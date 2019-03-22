@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="book_mapping" groupId="com.example.BookFileLoader.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>book_mapping.dmc</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="book_mapping_inputSchema" groupId="com.example.BookFileLoader.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>book_mapping_inputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="book_mapping_outputSchema" groupId="com.example.BookFileLoader.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>book_mapping_outputSchema.json</file>
+            <path>/_system/governance/datamapper</path>
+            <mediaType>text/plain</mediaType>
+        </item>
+    </artifact>
+    <artifact name="NewResource" groupId="com.example.BookFileLoader.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseServiceBus">
+        <item>
+            <file>NewResource.xml</file>
+            <path>/_system/config/myresources</path>
+            <mediaType/>
+        </item>
+    </artifact>
+</artifacts>

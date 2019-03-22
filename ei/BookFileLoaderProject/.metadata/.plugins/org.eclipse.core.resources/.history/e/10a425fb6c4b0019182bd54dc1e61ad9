@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="load_to_db" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <smooks config-key="conf:myresources/NewResource.xml">
+        <input type="text"/>
+        <output type="xml"/>
+    </smooks>
+    <foreach expression="//books">
+        <sequence>
+            <sequence key="insert_into_db"/>
+        </sequence>
+    </foreach>
+</sequence>

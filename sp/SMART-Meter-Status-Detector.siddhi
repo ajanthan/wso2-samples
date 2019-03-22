@@ -1,0 +1,27 @@
+@App:name("SMART-Meter-Status-Detector")
+
+@App:description('Receive events via MQTT transport in JSON format, detect status change and output on the console.')
+
+@source(type='mqtt', url= 'tcp://localhost:1886',topic='mqtt_topic_input', @map(type='json'))
+define stream RAWSMARTMeterEvent (badgeID int, model int, code int, type int, status string);
+
+@sink(type='log')
+define stream StatusChangeNotification (deviceID string, status string);
+
+define stream SMARTMeterEvent (deviceID string, status string);
+
+
+@info(name='PreProcessing')
+from RAWSMARTMeterEvent
+select str:concat(badgeID,":",code,":",model,":",type) as deviceID,status 
+insert into SMARTMeterEvent;
+
+
+
+@info(name='Detecting_Status_Change')
+partition with ( deviceID of SMARTMeterEvent)
+begin
+    from every e1=SMARTMeterEvent, e2=SMARTMeterEvent[e1.status!=e2.status]
+    select e1.deviceID,e2.status
+    insert into StatusChangeNotification;
+end;

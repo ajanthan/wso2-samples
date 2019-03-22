@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/cv" name="CVFIleAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/file">
+        <inSequence>
+            <sharepoint.init>
+                <apiUrl>https://demo4aja.sharepoint.com</apiUrl>
+                <accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvZGVtbzRhamEuc2hhcmVwb2ludC5jb21AYjZmNGM1MmQtMTdjMS00NmYyLWIxMDgtNTUxYzYyYWY2ZDU1IiwiaXNzIjoiMDAwMDAwMDEtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDAwQGI2ZjRjNTJkLTE3YzEtNDZmMi1iMTA4LTU1MWM2MmFmNmQ1NSIsImlhdCI6MTU1MDc5MDQ2MCwibmJmIjoxNTUwNzkwNDYwLCJleHAiOjE1NTA4MTk1NjAsImFjdG9yIjoiZjMxNjAxNDItN2JlZC00NDQyLTlmYzItYjkwMzE5ZjA2ZDY3QGI2ZjRjNTJkLTE3YzEtNDZmMi1iMTA4LTU1MWM2MmFmNmQ1NSIsImlkZW50aXR5cHJvdmlkZXIiOiJ1cm46ZmVkZXJhdGlvbjptaWNyb3NvZnRvbmxpbmUiLCJuYW1laWQiOiIxMDAzMjAwMDNDMzU1QURGIn0.Kk1pJzi3vhG4WIzS9g3AJZuG3lqft7hVotW7yTtsY9jc6ox0AUW_NIxt7qE47aR71mwRzvHOkxmt3cMHYC1qu8itmhp9pUVat50Y8s9QjCcePAx0g8XYbRi4QIRmtOswQok14jN76aVNSwuzt6iBg6DA0kQtZgPg_j4bbQPSDbHgLJixBbAXYhb3TEUntcjXdfWO2wlulmcoKBBv2Dd5vAa-t-0ocntYL2IfrQV161oKe_VIHSDOxNPcPlaEVVxUV3wSFwbCnIFQCEz-wmLL5QNAeQGJ5ZwtLAs0jFiaKQxIAEGFFsBae76BJ6KCBo1aCfdP-ylIRrFIgNbGOtPsIw</accessToken>
+                <intervalTime>28800</intervalTime>
+                <resource>00000003-0000-0ff1-ce00-000000000000/demo4aja.sharepoint.com@b6f4c52d-17c1-46f2-b108-551c62af6d55</resource>
+                <refreshToken>PAQABAAIAAACEfexXxjamQb3OeGQ4GugvUulLB2Ci6E73eRPCRvdgyvR1nOiTX_hfGK07rudGGwGoPiPZpY2bQLsxhlT6ftXD1CxLGgLrebDTCGdlojkp-IsJn8k9MGZJ9xeKM7IUp3rRgnObFqO_loFFiEhQtb0pUL3SIU_rGp7rqzAf7eAqVMDeQfEUuyYuIzKOgfO7Thz1VZfWmilqUtf0cWFymMiZwh5nGciLHY8z2HHuP4uvEcGtvkOo5Q6zs9NQJjjEeuqBvXKQS6QJ4RI6WpSlgQbcUnYYTGIPjs47Yil8m4-tWyAA</refreshToken>
+                <clientId>f3160142-7bed-4442-9fc2-b90319f06d67@b6f4c52d-17c1-46f2-b108-551c62af6d55</clientId>
+                <clientSecret>bHy9GfRH583B1tjXlLlRcZnJBzl/iuuqiNiW4TP/w1U=</clientSecret>
+                <id>b6f4c52d-17c1-46f2-b108-551c62af6d55</id>
+                <redirectUri>https://wso2.com/callback</redirectUri>
+                <blocking>/_system/config/wso2ei/sharepoint</blocking>
+            </sharepoint.init>
+            <sharepoint.retriveAllFilesWithinFolder>
+                <folderPath>/Shared Documents</folderPath>
+            </sharepoint.retriveAllFilesWithinFolder>
+            <property name="payload" scope="default">
+                <files xmlns=""/>
+            </property>
+            <foreach expression="/default/expression">
+                <sequence>
+                    <payloadFactory media-type="xml">
+                        <format>
+                            <file xmlns="">
+                                <name>$1</name>
+                            </file>
+                        </format>
+                        <args>
+                            <arg evaluator="xml" expression="//*[local-name()='content']/m:properties/d:Name" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"/>
+                        </args>
+                    </payloadFactory>
+                    <log level="full"/>
+                    <enrich>
+                        <source clone="true" type="body"/>
+                        <target action="child" property="payload" type="property"/>
+                    </enrich>
+                    <log level="custom">
+                        <property expression="$ctx:payload" name="Payload"/>
+                    </log>
+                </sequence>
+            </foreach>
+            <iterate expression="//b:feed/b:entry" xmlns:b="http://www.w3.org/2005/Atom">
+                <target>
+                    <sequence>
+                        <payloadFactory media-type="xml">
+                            <format>
+                                <file xmlns="">
+                                    <name>$1</name>
+                                </file>
+                            </format>
+                            <args>
+                                <arg evaluator="xml" expression="//*[local-name()='content']/m:properties/d:Name" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"/>
+                            </args>
+                        </payloadFactory>
+                        <log level="full"/>
+                        <enrich>
+                            <source clone="true" type="body"/>
+                            <target action="child" property="payload" type="property"/>
+                        </enrich>
+                        <log level="custom">
+                            <property expression="$ctx:payload" name="Payload"/>
+                        </log>
+                    </sequence>
+                </target>
+            </iterate>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/file/{fileName}">
+        <inSequence>
+            <sharepoint.init>
+                <apiUrl>https://demo4aja.sharepoint.com</apiUrl>
+                <accessToken>eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvZGVtbzRhamEuc2hhcmVwb2ludC5jb21AYjZmNGM1MmQtMTdjMS00NmYyLWIxMDgtNTUxYzYyYWY2ZDU1IiwiaXNzIjoiMDAwMDAwMDEtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDAwQGI2ZjRjNTJkLTE3YzEtNDZmMi1iMTA4LTU1MWM2MmFmNmQ1NSIsImlhdCI6MTU1MDc5MDQ2MCwibmJmIjoxNTUwNzkwNDYwLCJleHAiOjE1NTA4MTk1NjAsImFjdG9yIjoiZjMxNjAxNDItN2JlZC00NDQyLTlmYzItYjkwMzE5ZjA2ZDY3QGI2ZjRjNTJkLTE3YzEtNDZmMi1iMTA4LTU1MWM2MmFmNmQ1NSIsImlkZW50aXR5cHJvdmlkZXIiOiJ1cm46ZmVkZXJhdGlvbjptaWNyb3NvZnRvbmxpbmUiLCJuYW1laWQiOiIxMDAzMjAwMDNDMzU1QURGIn0.Kk1pJzi3vhG4WIzS9g3AJZuG3lqft7hVotW7yTtsY9jc6ox0AUW_NIxt7qE47aR71mwRzvHOkxmt3cMHYC1qu8itmhp9pUVat50Y8s9QjCcePAx0g8XYbRi4QIRmtOswQok14jN76aVNSwuzt6iBg6DA0kQtZgPg_j4bbQPSDbHgLJixBbAXYhb3TEUntcjXdfWO2wlulmcoKBBv2Dd5vAa-t-0ocntYL2IfrQV161oKe_VIHSDOxNPcPlaEVVxUV3wSFwbCnIFQCEz-wmLL5QNAeQGJ5ZwtLAs0jFiaKQxIAEGFFsBae76BJ6KCBo1aCfdP-ylIRrFIgNbGOtPsIw</accessToken>
+                <intervalTime>28800</intervalTime>
+                <resource>00000003-0000-0ff1-ce00-000000000000/demo4aja.sharepoint.com@b6f4c52d-17c1-46f2-b108-551c62af6d55</resource>
+                <refreshToken>PAQABAAIAAACEfexXxjamQb3OeGQ4GugvUulLB2Ci6E73eRPCRvdgyvR1nOiTX_hfGK07rudGGwGoPiPZpY2bQLsxhlT6ftXD1CxLGgLrebDTCGdlojkp-IsJn8k9MGZJ9xeKM7IUp3rRgnObFqO_loFFiEhQtb0pUL3SIU_rGp7rqzAf7eAqVMDeQfEUuyYuIzKOgfO7Thz1VZfWmilqUtf0cWFymMiZwh5nGciLHY8z2HHuP4uvEcGtvkOo5Q6zs9NQJjjEeuqBvXKQS6QJ4RI6WpSlgQbcUnYYTGIPjs47Yil8m4-tWyAA</refreshToken>
+                <clientId>f3160142-7bed-4442-9fc2-b90319f06d67@b6f4c52d-17c1-46f2-b108-551c62af6d55</clientId>
+                <clientSecret>bHy9GfRH583B1tjXlLlRcZnJBzl/iuuqiNiW4TP/w1U=</clientSecret>
+                <id>b6f4c52d-17c1-46f2-b108-551c62af6d55</id>
+                <redirectUri>https://wso2.com/callback</redirectUri>
+                <blocking>/_system/config/wso2ei/sharepoint</blocking>
+            </sharepoint.init>
+            <sharepoint.getFile>
+                <folderPath>/Shared Documents</folderPath>
+                <fileName>{$ctx:uri.var.fileName}</fileName>
+            </sharepoint.getFile>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

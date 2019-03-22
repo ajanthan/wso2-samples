@@ -1,0 +1,42 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "_postbook" : {
+      "id" : "http://wso2jsonschema.org/_postbook",
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "id" : "http://wso2jsonschema.org/_postbook/id",
+          "type" : "string"
+        },
+        "author" : {
+          "id" : "http://wso2jsonschema.org/_postbook/author",
+          "type" : "string"
+        },
+        "title" : {
+          "id" : "http://wso2jsonschema.org/_postbook/title",
+          "type" : "string"
+        },
+        "genre" : {
+          "id" : "http://wso2jsonschema.org/_postbook/genre",
+          "type" : "string"
+        },
+        "price" : {
+          "id" : "http://wso2jsonschema.org/_postbook/price",
+          "type" : "number"
+        },
+        "publish_date" : {
+          "id" : "http://wso2jsonschema.org/_postbook/publish_date",
+          "type" : "string"
+        },
+        "description" : {
+          "id" : "http://wso2jsonschema.org/_postbook/description",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

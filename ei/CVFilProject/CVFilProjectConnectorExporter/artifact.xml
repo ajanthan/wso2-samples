@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="sharepoint-connector" groupId="com.example.CVFilProject.lib" version="1.0.4" type="synapse/lib" serverRole="EnterpriseServiceBus">
+        <file>sharepoint-connector-1.0.4.zip</file>
+    </artifact>
+</artifacts>

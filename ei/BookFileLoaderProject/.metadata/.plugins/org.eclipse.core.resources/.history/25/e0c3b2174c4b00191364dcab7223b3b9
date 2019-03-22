@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="load_to_db" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <datamapper config="gov:datamapper/book_mapping.dmc" inputSchema="gov:datamapper/book_mapping_inputSchema.json" inputType="CSV" outputSchema="gov:datamapper/book_mapping_outputSchema.json" outputType="JSON"/>
+    <call>
+        <endpoint key="BookDSEP"/>
+    </call>
+</sequence>

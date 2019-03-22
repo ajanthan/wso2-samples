@@ -1,0 +1,230 @@
+2019-03-19 13:20:56,575 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-19 13:21:00,818 [Worker-8] INFO  org.eclipse.jetty.util.log - Logging initialized @11347ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-19 13:21:00,890 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 13:21:00,918 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 13:21:00,918 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 13:21:00,919 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-19 13:21:00,927 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@33cc9617{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 13:21:00,927 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@afc0fc6{/servlet,null,AVAILABLE}
+2019-03-19 13:21:00,942 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7fdae97a{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-19 13:21:00,943 [Worker-8] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-19 13:21:00,944 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@afc0fc6{/servlet,null,UNAVAILABLE}
+2019-03-19 13:21:00,944 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@33cc9617{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-19 13:21:00,947 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 13:21:00,948 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 13:21:00,948 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 13:21:00,948 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-19 13:21:00,948 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2f6a9d8f{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 13:21:00,949 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@348ba955{/servlet,null,AVAILABLE}
+2019-03-19 13:21:00,963 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2cbe15b0{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-19 13:21:00,964 [Worker-8] INFO  org.eclipse.jetty.server.Server - Started @11492ms
+2019-03-19 15:37:17,235 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-19 15:37:19,373 [Worker-0] INFO  org.eclipse.jetty.util.log - Logging initialized @10923ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-19 15:37:19,522 [Worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 15:37:19,582 [Worker-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 15:37:19,582 [Worker-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 15:37:19,584 [Worker-0] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-19 15:37:19,593 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5c607723{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 15:37:19,593 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4df5bfdb{/servlet,null,AVAILABLE}
+2019-03-19 15:37:19,608 [Worker-0] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4bb02d98{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-19 15:37:19,609 [Worker-0] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-19 15:37:19,610 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4df5bfdb{/servlet,null,UNAVAILABLE}
+2019-03-19 15:37:19,610 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5c607723{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-19 15:37:19,614 [Worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 15:37:19,615 [Worker-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 15:37:19,616 [Worker-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 15:37:19,616 [Worker-0] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-19 15:37:19,616 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1ab7ff77{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 15:37:19,616 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@488b53e7{/servlet,null,AVAILABLE}
+2019-03-19 15:37:19,617 [Worker-0] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4300a779{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-19 15:37:19,617 [Worker-0] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-19 15:37:19,617 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@488b53e7{/servlet,null,UNAVAILABLE}
+2019-03-19 15:37:19,618 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1ab7ff77{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-19 15:37:19,620 [Worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 15:37:19,621 [Worker-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 15:37:19,621 [Worker-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 15:37:19,621 [Worker-0] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-19 15:37:19,621 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7e20429a{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 15:37:19,622 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@c1adc88{/servlet,null,AVAILABLE}
+2019-03-19 15:37:19,622 [Worker-0] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@52073a37{HTTP/1.1,[http/1.1]}{0.0.0.0:7776}
+2019-03-19 15:37:19,622 [Worker-0] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-19 15:37:19,623 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@c1adc88{/servlet,null,UNAVAILABLE}
+2019-03-19 15:37:19,623 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7e20429a{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-19 15:37:19,625 [Worker-0] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-19 15:37:19,626 [Worker-0] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-19 15:37:19,626 [Worker-0] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-19 15:37:19,627 [Worker-0] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-19 15:37:19,627 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@781892d4{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-19 15:37:19,627 [Worker-0] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@26222df4{/servlet,null,AVAILABLE}
+2019-03-19 15:37:19,644 [Worker-0] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@45e2f8b7{HTTP/1.1,[http/1.1]}{0.0.0.0:7777}
+2019-03-19 15:37:19,646 [Worker-0] INFO  org.eclipse.jetty.server.Server - Started @11196ms
+2019-03-20 14:32:37,565 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-03-20 14:32:40,572 [Worker-8] INFO  org.eclipse.jetty.util.log - Logging initialized @14894ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-20 14:32:40,769 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 14:32:40,904 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 14:32:40,905 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 14:32:40,917 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 14:32:40,954 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2ecc4ea9{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 14:32:40,957 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@617faeaa{/servlet,null,AVAILABLE}
+2019-03-20 14:32:41,012 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@42948c12{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-20 14:32:41,012 [Worker-8] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 14:32:41,015 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@617faeaa{/servlet,null,UNAVAILABLE}
+2019-03-20 14:32:41,015 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2ecc4ea9{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 14:32:41,030 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 14:32:41,032 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 14:32:41,032 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 14:32:41,032 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 14:32:41,032 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4566ed3{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 14:32:41,033 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1edf7201{/servlet,null,AVAILABLE}
+2019-03-20 14:32:41,034 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@484f35e1{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-20 14:32:41,034 [Worker-8] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 14:32:41,039 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1edf7201{/servlet,null,UNAVAILABLE}
+2019-03-20 14:32:41,040 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4566ed3{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 14:32:41,080 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 14:32:41,082 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 14:32:41,082 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 14:32:41,082 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 14:32:41,083 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3c080ba6{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 14:32:41,083 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@52ca2a5e{/servlet,null,AVAILABLE}
+2019-03-20 14:32:41,084 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4fdddb16{HTTP/1.1,[http/1.1]}{0.0.0.0:7776}
+2019-03-20 14:32:41,084 [Worker-8] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 14:32:41,085 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@52ca2a5e{/servlet,null,UNAVAILABLE}
+2019-03-20 14:32:41,085 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3c080ba6{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 14:32:41,100 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 14:32:41,102 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 14:32:41,102 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 14:32:41,102 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 14:32:41,103 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@a2b79c7{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 14:32:41,103 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3ad478f4{/servlet,null,AVAILABLE}
+2019-03-20 14:32:41,104 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7a210a91{HTTP/1.1,[http/1.1]}{0.0.0.0:7777}
+2019-03-20 14:32:41,104 [Worker-8] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 14:32:41,105 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3ad478f4{/servlet,null,UNAVAILABLE}
+2019-03-20 14:32:41,105 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@a2b79c7{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 14:32:41,110 [Worker-8] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 14:32:41,111 [Worker-8] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 14:32:41,111 [Worker-8] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 14:32:41,111 [Worker-8] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-20 14:32:41,112 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@10012d19{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 14:32:41,112 [Worker-8] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@12ea704b{/servlet,null,AVAILABLE}
+2019-03-20 14:32:41,153 [Worker-8] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@116e7b65{HTTP/1.1,[http/1.1]}{0.0.0.0:7778}
+2019-03-20 14:32:41,153 [Worker-8] INFO  org.eclipse.jetty.server.Server - Started @15477ms
+2019-03-20 15:31:16,711 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-20 15:31:19,162 [Worker-12] INFO  org.eclipse.jetty.util.log - Logging initialized @15081ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-20 15:31:19,424 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,479 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,479 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,483 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 15:31:19,505 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@72a37e2a{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,506 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@38776e1a{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,534 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@644626b3{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-20 15:31:19,535 [Worker-12] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 15:31:19,537 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@38776e1a{/servlet,null,UNAVAILABLE}
+2019-03-20 15:31:19,537 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@72a37e2a{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 15:31:19,540 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,562 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,563 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,563 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-20 15:31:19,563 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@460b5e55{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,564 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7f77ce13{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,566 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@55881928{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-20 15:31:19,566 [Worker-12] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 15:31:19,567 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7f77ce13{/servlet,null,UNAVAILABLE}
+2019-03-20 15:31:19,567 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@460b5e55{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 15:31:19,571 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,574 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,574 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,574 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 15:31:19,575 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@20ad7cde{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,576 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@19b7785f{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,577 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7bcceaee{HTTP/1.1,[http/1.1]}{0.0.0.0:7776}
+2019-03-20 15:31:19,577 [Worker-12] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 15:31:19,584 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@19b7785f{/servlet,null,UNAVAILABLE}
+2019-03-20 15:31:19,584 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@20ad7cde{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 15:31:19,590 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,592 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,593 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,593 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-20 15:31:19,593 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d04f239{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,594 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2bced811{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,594 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2f966144{HTTP/1.1,[http/1.1]}{0.0.0.0:7777}
+2019-03-20 15:31:19,595 [Worker-12] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 15:31:19,595 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@2bced811{/servlet,null,UNAVAILABLE}
+2019-03-20 15:31:19,595 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d04f239{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 15:31:19,598 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,599 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,599 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,600 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-20 15:31:19,600 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@36e1aebb{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,600 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@25521aa8{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,601 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@45e8569c{HTTP/1.1,[http/1.1]}{0.0.0.0:7778}
+2019-03-20 15:31:19,601 [Worker-12] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-20 15:31:19,601 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@25521aa8{/servlet,null,UNAVAILABLE}
+2019-03-20 15:31:19,602 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@36e1aebb{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-20 15:31:19,604 [Worker-12] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-20 15:31:19,606 [Worker-12] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-20 15:31:19,606 [Worker-12] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-20 15:31:19,606 [Worker-12] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-20 15:31:19,606 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@36b62366{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-20 15:31:19,607 [Worker-12] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@36cdff05{/servlet,null,AVAILABLE}
+2019-03-20 15:31:19,629 [Worker-12] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@47bc31ca{HTTP/1.1,[http/1.1]}{0.0.0.0:7779}
+2019-03-20 15:31:19,630 [Worker-12] INFO  org.eclipse.jetty.server.Server - Started @15548ms
+2019-03-21 23:55:36,898 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-21 23:55:39,396 [Worker-10] INFO  org.eclipse.jetty.util.log - Logging initialized @13671ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-21 23:55:39,503 [Worker-10] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-21 23:55:39,539 [Worker-10] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-21 23:55:39,539 [Worker-10] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-21 23:55:39,541 [Worker-10] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-21 23:55:39,552 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@20d2320d{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-21 23:55:39,552 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@380bef52{/servlet,null,AVAILABLE}
+2019-03-21 23:55:39,571 [Worker-10] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@22728c38{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-21 23:55:39,572 [Worker-10] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-21 23:55:39,573 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@380bef52{/servlet,null,UNAVAILABLE}
+2019-03-21 23:55:39,574 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@20d2320d{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-21 23:55:39,577 [Worker-10] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-21 23:55:39,579 [Worker-10] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-21 23:55:39,579 [Worker-10] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-21 23:55:39,579 [Worker-10] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-21 23:55:39,579 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@23ca7cbc{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-21 23:55:39,580 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5224539e{/servlet,null,AVAILABLE}
+2019-03-21 23:55:39,580 [Worker-10] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7e1a0257{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-21 23:55:39,581 [Worker-10] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-21 23:55:39,581 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5224539e{/servlet,null,UNAVAILABLE}
+2019-03-21 23:55:39,581 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@23ca7cbc{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-21 23:55:39,584 [Worker-10] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-21 23:55:39,585 [Worker-10] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-21 23:55:39,585 [Worker-10] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-21 23:55:39,585 [Worker-10] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-21 23:55:39,586 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@440ec7ad{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-21 23:55:39,586 [Worker-10] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6ea92ccf{/servlet,null,AVAILABLE}
+2019-03-21 23:55:39,603 [Worker-10] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2cc253c{HTTP/1.1,[http/1.1]}{0.0.0.0:7776}
+2019-03-21 23:55:39,604 [Worker-10] INFO  org.eclipse.jetty.server.Server - Started @13879ms
+2019-03-22 11:06:06,887 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-22 11:06:09,519 [Worker-7] INFO  org.eclipse.jetty.util.log - Logging initialized @13220ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-03-22 11:06:09,918 [Worker-7] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-22 11:06:09,976 [Worker-7] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-22 11:06:09,976 [Worker-7] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-22 11:06:09,978 [Worker-7] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-22 11:06:10,011 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@66864949{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-22 11:06:10,012 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@27a05b2a{/servlet,null,AVAILABLE}
+2019-03-22 11:06:10,060 [Worker-7] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7cc4a820{HTTP/1.1,[http/1.1]}{0.0.0.0:7774}
+2019-03-22 11:06:10,060 [Worker-7] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-22 11:06:10,063 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@27a05b2a{/servlet,null,UNAVAILABLE}
+2019-03-22 11:06:10,064 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@66864949{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-22 11:06:10,070 [Worker-7] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-22 11:06:10,074 [Worker-7] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-22 11:06:10,074 [Worker-7] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-22 11:06:10,075 [Worker-7] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2019-03-22 11:06:10,076 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@74c68cef{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-22 11:06:10,076 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@43e6c5ee{/servlet,null,AVAILABLE}
+2019-03-22 11:06:10,077 [Worker-7] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@35f0f69c{HTTP/1.1,[http/1.1]}{0.0.0.0:7775}
+2019-03-22 11:06:10,078 [Worker-7] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2019-03-22 11:06:10,079 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@43e6c5ee{/servlet,null,UNAVAILABLE}
+2019-03-22 11:06:10,083 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@74c68cef{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,UNAVAILABLE}
+2019-03-22 11:06:10,092 [Worker-7] INFO  org.eclipse.jetty.server.Server - jetty-9.4.8.v20171121, build timestamp: 2017-11-21T13:27:37-08:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
+2019-03-22 11:06:10,096 [Worker-7] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2019-03-22 11:06:10,096 [Worker-7] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2019-03-22 11:06:10,096 [Worker-7] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2019-03-22 11:06:10,098 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@53792ac8{/welcome,file:///Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/1172/0/.cp/TemplateDash/,AVAILABLE}
+2019-03-22 11:06:10,099 [Worker-7] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5a7b925b{/servlet,null,AVAILABLE}
+2019-03-22 11:06:10,132 [Worker-7] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@60179ca3{HTTP/1.1,[http/1.1]}{0.0.0.0:7776}
+2019-03-22 11:06:10,135 [Worker-7] INFO  org.eclipse.jetty.server.Server - Started @13834ms

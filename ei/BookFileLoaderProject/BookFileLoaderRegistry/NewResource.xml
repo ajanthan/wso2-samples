@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><smooks-resource-list xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd" xmlns:csv="http://www.milyn.org/xsd/smooks/csv-1.2.xsd">
+  <params>
+    <param name="stream.filter.type">SAX</param>
+    <param name="inputType">input.csv</param>
+  </params>
+  <csv:reader fields="id,author,title,genre,price,publish_date,description" recordElementName="book" rootElementName="books" skipLines="1"/>
+</smooks-resource-list>

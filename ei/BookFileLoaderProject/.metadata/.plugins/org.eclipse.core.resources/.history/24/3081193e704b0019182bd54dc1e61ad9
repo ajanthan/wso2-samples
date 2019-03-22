@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="load_to_db" groupId="com.example.BookFileLoader.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/load_to_db.xml</file>
+    </artifact>
+    <artifact name="BookDSEP" groupId="com.example.BookFileLoader.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/BookDSEP.xml</file>
+    </artifact>
+    <artifact name="Sequence" groupId="com.example.BookFileLoader.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence.xml</file>
+    </artifact>
+    <artifact name="BookFileEP" groupId="com.example.BookFileLoader.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/BookFileEP.xml</file>
+    </artifact>
+    <artifact name="insert_into_db" groupId="com.example.BookFileLoader.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/insert_into_db.xml</file>
+    </artifact>
+</artifacts>

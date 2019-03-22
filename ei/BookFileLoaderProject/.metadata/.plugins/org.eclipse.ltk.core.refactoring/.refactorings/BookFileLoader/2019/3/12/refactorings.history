@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BookFileLoader/src/main/synapse-config/sequences/Sequence.xml&apos; to &apos;error.xml&apos;" description="Rename resource &apos;Sequence.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/synapse-config/sequences/Sequence.xml" name="error.xml" stamp="1553128106185" updateReferences="true"/>
+</session>

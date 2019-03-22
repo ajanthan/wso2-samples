@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/cvfile" name="CVFIleAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/cv">
+        <inSequence/>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

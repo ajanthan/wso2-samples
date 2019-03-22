@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="load_to_db" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <smooks config-key="conf:myresources/NewResource.xml">
+        <input type="text"/>
+        <output type="xml"/>
+    </smooks>
+    <foreach expression="//books/book">
+        <sequence>
+            <payloadFactory media-type="json">
+                <format>{
+    "_postbook":{
+       "id”:”$1”,
+        "author”:”$2”,
+        "title" :”$3”,
+        "genre" :”$4”,
+        "price": $5,
+        "publish_date": “$6”,
+        "description" :”$7”
+    }
+}</format>
+                <args>
+                    <arg evaluator="xml" expression="//book/id"/>
+                    <arg evaluator="xml" expression="//book/author"/>
+                    <arg evaluator="xml" expression="//book/title"/>
+                    <arg evaluator="xml" expression="//book/genre"/>
+                    <arg evaluator="xml" expression="//book/price"/>
+                    <arg evaluator="xml" expression="//book/publish_date"/>
+                    <arg evaluator="xml" expression="//book/description"/>
+                </args>
+            </payloadFactory>
+            <call>
+                <endpoint key="BookDSEP"/>
+            </call>
+        </sequence>
+    </foreach>
+</sequence>
